@@ -1,4 +1,4 @@
-public class Espresso extends Beverage {
+public class Espresso implements Beverage {
     @Override
     public String getDescription() {
         return "Espresso";

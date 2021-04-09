@@ -1,4 +1,4 @@
-public class HouseBlend extends Beverage {
+public class HouseBlend implements Beverage {
     @Override
     public String getDescription() {
         return "HouseBlend";

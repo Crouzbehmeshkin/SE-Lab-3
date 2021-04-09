@@ -1,4 +1,4 @@
-public class Decaf extends Beverage {
+public class Decaf implements Beverage {
     @Override
     public String getDescription() {
         return "Decaf";
