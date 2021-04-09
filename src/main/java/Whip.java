@@ -1,6 +1,5 @@
 public class Whip extends Decorator {
-    public Whip(Beverage beverage)
-    {
+    public Whip(Beverage beverage) {
         super(beverage);
     }
 

@@ -1,6 +1,5 @@
 public class SteamedMilk extends Decorator {
-    public SteamedMilk(Beverage beverage)
-    {
+    public SteamedMilk(Beverage beverage) {
         super(beverage);
     }
 

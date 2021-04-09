@@ -3,7 +3,7 @@ public class DarkRoast implements Beverage {
     public String getDescription() {
         return "DarkRoast";
     }
-    
+
     @Override
     public double cost() {
         return 0.99;
