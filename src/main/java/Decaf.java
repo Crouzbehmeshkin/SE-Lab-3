@@ -1,7 +1,7 @@
 public class Decaf implements Beverage {
     @Override
     public String getDescription() {
-        return "Decaf";
+        return "Delicious Decaf";
     }
     
     @Override

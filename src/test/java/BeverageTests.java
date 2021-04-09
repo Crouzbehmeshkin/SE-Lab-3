@@ -8,7 +8,7 @@ public class BeverageTests {
         // Pure HouseBlend
         Beverage beverage = new HouseBlend();
         assertEquals("Delicious HouseBlend", beverage.getDescription());
-        assertEquals(0.89, beverage.cost());
+        assertEquals(0.89, beverage.cost(), 1e-4);
     }
 
     @Test
@@ -16,7 +16,7 @@ public class BeverageTests {
         // Pure Espresso
         Beverage beverage = new Espresso();
         assertEquals("Delicious Espresso", beverage.getDescription());
-        assertEquals(1.99, beverage.cost());
+        assertEquals(1.99, beverage.cost(), 1e-4);
     }
 
     @Test
@@ -24,7 +24,7 @@ public class BeverageTests {
         // HouseBlend + SteamedMilk
         Beverage beverage = new SteamedMilk(new HouseBlend());
         assertEquals("Delicious HouseBlend with milk", beverage.getDescription());
-        assertEquals(0.89 + 0.1, beverage.cost());
+        assertEquals(0.89 + 0.1, beverage.cost(), 1e-4);
     }
 
     @Test
@@ -32,7 +32,7 @@ public class BeverageTests {
         // Espresso + Mocha + Whip
         Beverage beverage = new Whip(new Mocha(new Espresso()));
         assertEquals("Delicious Espresso with mocha with whip", beverage.getDescription());
-        assertEquals(1.99 + 0.2 + 0.10, beverage.cost());
+        assertEquals(1.99 + 0.2 + 0.10, beverage.cost(), 1e-4);
     }
 
     @Test
@@ -40,6 +40,6 @@ public class BeverageTests {
         // Espresso + Mocha + Mocha + Whip + SteamedMilk
         Beverage beverage = new SteamedMilk(new Whip(new Mocha(new Mocha(new Espresso()))));
         assertEquals("Delicious Espresso with mocha with mocha with whip with milk", beverage.getDescription());
-        assertEquals(1.99 + 0.2 + 0.2 + 0.1 + 0.1, beverage.cost());
+        assertEquals(1.99 + 0.2 + 0.2 + 0.1 + 0.1, beverage.cost(), 1e-4);
     }
 }
