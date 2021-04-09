@@ -1,5 +1,5 @@
 public abstract class MultImplementor {
-    public double operation(double a, double b) {
+    public int operation(int a, int b) {
         return 0;
     }   
 }
