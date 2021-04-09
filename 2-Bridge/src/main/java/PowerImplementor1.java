@@ -5,8 +5,7 @@ public class PowerImplementor1 extends PowerImplementor {
 
     public int operation(int base, int power) {
         int ret = 1;
-        for (int i = 0; i < power; i++)
-        {
+        for (int i = 0; i < power; i++) {
             ret = mult_implementor.operation(ret, base);
         }
         return ret;
