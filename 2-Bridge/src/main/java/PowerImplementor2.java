@@ -6,6 +6,8 @@ public class PowerImplementor2 extends PowerImplementor {
     public int operation(int base, int power) {
         if (power == 0)
             return 1;
+        if (power == 1)
+            return base;
         if (power%2 == 0)
         {
             int half = operation(base, power/2);
