@@ -1,11 +1,11 @@
-public class HouseBlend extends Beverage {
+public class DarkRoast implements Beverage {
     @Override
     public String getDescription() {
-        return "HouseBlend";
+        return "DarkRoast";
     }
     
     @Override
     public double cost() {
-        return 0.89;
+        return 0.99;
     }
 }

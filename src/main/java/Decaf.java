@@ -1,11 +1,11 @@
-public class HouseBlend extends Beverage {
+public class Decaf extends Beverage {
     @Override
     public String getDescription() {
-        return "HouseBlend";
+        return "Decaf";
     }
     
     @Override
     public double cost() {
-        return 0.89;
+        return 1.05;
     }
 }
