@@ -3,8 +3,12 @@ public class PowerImplementor1 extends PowerImplementor {
         super(mult_implementor);
     }
 
-    public double operation(double base, int power) {
-        // TODO
-        return 0;
+    public int operation(int base, int power) {
+        int ret = 1;
+        for (int i = 0; i < power; i++)
+        {
+            ret = mult_implementor.operation(ret, base);
+        }
+        return ret;
     }
 }
