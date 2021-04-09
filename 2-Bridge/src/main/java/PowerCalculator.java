@@ -5,7 +5,7 @@ public class PowerCalculator {
         this.power_implementor = power_implementor;
     }
 
-    public double calculate(double base, int power) {
+    public double calculate(int base, int power) {
         return this.power_implementor.operation(base, power);
     }
 }
