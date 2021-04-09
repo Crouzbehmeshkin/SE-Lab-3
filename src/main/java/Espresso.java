@@ -1,7 +1,7 @@
 public class Espresso implements Beverage {
     @Override
     public String getDescription() {
-        return "Espresso";
+        return "Delicious Espresso";
     }
 
     @Override

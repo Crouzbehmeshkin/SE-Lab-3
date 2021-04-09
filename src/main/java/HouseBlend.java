@@ -1,7 +1,7 @@
 public class HouseBlend implements Beverage {
     @Override
     public String getDescription() {
-        return "HouseBlend";
+        return "Delicious HouseBlend";
     }
 
     @Override

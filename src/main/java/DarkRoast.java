@@ -1,7 +1,7 @@
 public class DarkRoast implements Beverage {
     @Override
     public String getDescription() {
-        return "DarkRoast";
+        return "Delicious DarkRoast";
     }
 
     @Override
